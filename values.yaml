@@ -1,0 +1,25 @@
+replicaCount: 1
+
+image:
+  repository: banishadocker91/webapp
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: ClusterIP
+  port: 80
+
+route:
+  enabled: true
+  host: ""
+
+resources: {}
+
+pvc:
+  storage: 5Gi
+
+configMap:
+  WELCOME_MSG: "Welcome to My Web Application on ROSA!"
+
+secret:
+  APP_KEY: "MySecretKey123"
