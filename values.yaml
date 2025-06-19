@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: banishadocker91/webapp
+  repository: banishadocker91/my-webapp
   pullPolicy: IfNotPresent
   tag: "latest"
 
